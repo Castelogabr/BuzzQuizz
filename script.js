@@ -25,3 +25,17 @@ function carregarQuizes(resposta){
 function falhaAoCarregarQuizes(resposta){
 
 }
+
+// falta colocar a API pra funcionar na função criarQuiz
+function criarQuiz() {
+  let div1 = document.querySelector('.cabeçalho')
+  div1.classList.add('hidden')
+  let div2 = document.querySelector('.principal')
+  div2.classList.add('hidden')
+  let div3 = document.querySelector('.principal2')
+  div3.classList.remove('hidden')
+}
+
+function criarPerguntas() {
+  alert('Você irá para a página de criação de perguntas')
+}

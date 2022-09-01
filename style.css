@@ -90,14 +90,14 @@ main{
   main do quizz
 */
 
-.main {
+.principal {
     width: 1051px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 77px;
 }
 
-.main h1{
+.principal h1{
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -106,7 +106,7 @@ main{
 }
 
 .todos-quizz {
-  width: 1051px;
+  width: 1051px; 
   height: 181px;
   display: flex;
   flex-wrap: wrap;
@@ -162,6 +162,61 @@ main{
     cursor: pointer;
   }
 
+  .principal2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hidden{
-    visibility: hidden;
+    display: none;
+  }
+
+  .principal2 h1 {
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 27px;
+  }
+
+  .atributos-quiz {
+    width: 600px;
+    height: 256px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding-top: 21px;
+    margin-bottom: 85px;
+  }
+
+  .atributos-quiz input {
+    width: 564px;
+    height: 46px;
+    font-family: "Roboto";
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 400;
+    color: #BABABA;
+    background-color: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    padding-left: 23px;
+  }
+
+  .principal2 button {
+    background-color: #EC362D;
+    width: 369px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    border: hidden;
+    border-radius: 15px;
+    font-family: "Roboto";
+    font-size: 21px;
+    font-weight: 400;
+    color: #FFF5F4;
+    cursor: pointer;
   }

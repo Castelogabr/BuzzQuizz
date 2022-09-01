@@ -16,20 +16,36 @@
         </div>
     </header>
     <main>
-        <div class="header">
+        <div class="cabeçalho">
             <div class="criar-quizz">
                 <div class="meu-quizz">
                     <p>Você não criou nenhum quizz ainda :(</p>
-                    <input class="quizz-botao" type="button" value="Criar Quizz">
+                    <input onclick="criarQuiz()" class="quizz-botao" type="button" value="Criar Quizz">
                   </div>
             </div>
         </div>
-        <div class="main">
+        <div class="principal">
             <h1>Todos os Quizzes</h1>
             <div class="todos-quizz">
                 
             </div>
         </div>
+
+        <!-- Primeiro menu de criação do Quiz -->
+
+            <div class="principal2 hidden">
+                <h1>Comece pelo começo</h1>
+                <div class="atributos-quiz">
+                    <input placeholder="Título do seu quizz">
+                    <input placeholder="URL da imagem do seu quizz">
+                    <input placeholder="Quantidade de perguntas quizz">
+                    <input placeholder="Quantidade de níveis quizz">
+                </div>
+                <button onclick="criarPerguntas()">Prosseguir para criar perguntas</button>
+            </div>
+
+        <!--                                  -->
+
     </main>
     <footer>     
     </footer>
