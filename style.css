@@ -197,14 +197,17 @@ main{
     height: 46px;
     font-family: "Roboto";
     font-size: 19px;
-    font-style: italic;
     font-weight: 400;
-    color: #BABABA;
     background-color: #FFFFFF;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
     padding-left: 23px;
   }
+  .atributos-quiz input::placeholder{
+    font-style: italic;
+    color: #BABABA;
+  }
+  
 
   .principal2 button {
     background-color: #EC362D;
