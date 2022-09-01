@@ -37,5 +37,9 @@ function criarQuiz() {
 }
 
 function criarPerguntas() {
-  alert('Você irá para a página de criação de perguntas')
+  // alert('Você irá para a página de criação de perguntas')
+  let div3 = document.querySelector('.principal2')
+  div3.classList.add('hidden')
+  let div4 = document.querySelector('.principal3')
+  div4.classList.remove('hidden')
 }
