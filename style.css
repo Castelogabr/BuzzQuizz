@@ -197,17 +197,14 @@ main{
     height: 46px;
     font-family: "Roboto";
     font-size: 19px;
+    font-style: italic;
     font-weight: 400;
+    color: #BABABA;
     background-color: #FFFFFF;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
     padding-left: 23px;
   }
-  .atributos-quiz input::placeholder{
-    font-style: italic;
-    color: #BABABA;
-  }
-  
 
   .principal2 button {
     background-color: #EC362D;
@@ -225,24 +222,25 @@ main{
   }
  /* layout da pagina de teste*/
   .Layout-quizz {
-    position: absolute;
-    margin: 50% auto 30%;
+    margin: 5% auto;
     width: 759px;
     height: 227px;
   } 
 
   .fundo-topo img{
-    position: absolute;
+    Width:100%;
+    Height:30%;
     top: 69px;
-    left: 0;
-    width: 100%;
-    height: 227px;
-  } 
-
+    left:0;
+    position: absolute;
+    
+  }
   .caixa-Quizz{
     Width:759px;
     Height:676px;
-    margin-top:25%;
+    top: 80%;
+    position: relative;
+
   }
   .caixa-pergunta{
     margin-bottom: 10px;
@@ -253,22 +251,37 @@ main{
     align-items: center;
     justify-content: center;
   }
-
-  .caixa-Quizz-opção img{
-    Width:45%;
-    Height:45%;
-
-  }
   .caixa-Quizz-opção{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 60px;
-
   }
 
-  .legenda-foto{
-    background-color: blue;
-    height: 50px;
-    width: 50px;
+  .caixa-Quizz-opção img{
+    Width:45%;
+    Height:45%;
   }
+
+
+  .legenda-foto1{
+    position: absolute;
+    left: 10px;
+    top: 350px;
+  }
+  .legenda-foto2{
+    position: absolute;
+    right: 240px;
+    top: 350px;
+  }
+  .legenda-foto3{
+    position: absolute;
+    left: 10px;
+    top: 600px;
+  }
+  .legenda-foto4{
+    position: absolute;
+    right: 240px;
+    top: 600px;
+  }
+

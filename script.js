@@ -122,7 +122,3 @@ function criarPerguntas() {
   }
 
 }
-
-
-
-aaa
