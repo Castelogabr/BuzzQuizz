@@ -197,14 +197,17 @@ main{
     height: 46px;
     font-family: "Roboto";
     font-size: 19px;
-    font-style: italic;
     font-weight: 400;
-    color: #BABABA;
     background-color: #FFFFFF;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
     padding-left: 23px;
   }
+  .atributos-quiz input::placeholder{
+    font-style: italic;
+    color: #BABABA;
+  }
+  
 
   .principal2 button {
     background-color: #EC362D;
@@ -223,4 +226,104 @@ main{
 
   .principal3 {
     text-align: center;
+  }
+
+  .principal3 h1 {
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 36px;
+  }
+
+  .principal3 button {
+    width: 600px;
+    height: 825px;
+    background-color: #FFFFFF;
+    border: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 23px;
+  }
+
+  .principal3 button .margem {
+    margin-bottom: 14px;
+  }
+
+  .principal3 h2 {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 16px;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .principal3 input {
+    width: 564px;
+    height: 46px;
+    font-family: "Roboto";
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+    color: #BABABA;
+    padding-left: 23px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+  }
+
+  .não-selecionado:nth-child() {
+    display: none;
+  }
+  
+ /* layout da pagina de teste*/
+  .Layout-quizz {
+    position: absolute;
+    margin: 50% auto 30%;
+    width: 759px;
+    height: 227px;
+  } 
+
+  .fundo-topo img{
+    position: absolute;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    height: 227px;
+  } 
+
+  .caixa-Quizz{
+    Width:759px;
+    Height:676px;
+    margin-top:25%;
+  }
+  .caixa-pergunta{
+    margin-bottom: 10px;
+    Width:100%;
+    Height:137px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caixa-Quizz-opção img{
+    Width:45%;
+    Height:45%;
+
+  }
+  .caixa-Quizz-opção{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+
+  }
+
+  .legenda-foto{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
   }

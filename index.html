@@ -36,10 +36,10 @@
             <div class="principal2 hidden">
                 <h1>Comece pelo começo</h1>
                 <div class="atributos-quiz">
-                    <input placeholder="Título do seu quizz">
-                    <input placeholder="URL da imagem do seu quizz">
-                    <input placeholder="Quantidade de perguntas quizz">
-                    <input placeholder="Quantidade de níveis quizz">
+                    <input id="titulo" placeholder="Título do seu quizz">
+                    <input id="url" placeholder="URL da imagem do seu quizz">
+                    <input id="qtsPergunta" placeholder="Quantidade de perguntas quizz">
+                    <input id="qtsDeNivel" placeholder="Quantidade de níveis quizz">
                 </div>
                 <button onclick="criarPerguntas()">Prosseguir para criar perguntas</button>
             </div>
@@ -50,26 +50,60 @@
             <h1>Crie suas perguntas</h1>
             <button>
                 <h2>Pergunta 1</h2>
-                <input placeholder="Texto da pergunta">
-                <input placeholder="Cor de fundo da pergunta">
+                <input class="pergunta" placeholder="Texto da pergunta">
+                <input class="pergunta" placeholder="Cor de fundo da pergunta">
                 <h2>Resposta correta</h2>
-                <input placeholder="Resposta correta">
-                <input placeholder="URL da imagem">
+                <input class="correta" placeholder="Resposta correta">
+                <input class="correta" placeholder="URL da imagem">
                 <h2>Respostas incorretas</h2>
-                <input placeholder="Resposta incorreta 1">
-                <input placeholder="URL da imagem 1">
-                <input placeholder="Resposta incorreta 2">
-                <input placeholder="URL da imagem 2">
-                <input placeholder="Resposta incorreta 3">
-                <input placeholder="URL da imagem 3">
-            <!-- </button>
-            <button>
-
+                <input class="incorreta-1" placeholder="Resposta incorreta 1">
+                <input class="incorreta-1 margem" placeholder="URL da imagem 1">
+                <input class="incorreta-2" placeholder="Resposta incorreta 2">
+                <input class="incorreta-2 margem" placeholder="URL da imagem 2">
+                <input class="incorreta-3" placeholder="Resposta incorreta 3">
+                <input class="incorreta-3 margem" placeholder="URL da imagem 3">
             </button>
-            <button>
-
+            <button class="não-selecionado">
+                <h2>Pergunta 2</h2>
+                <input class="pergunta" placeholder="Texto da pergunta">
+                <input class="pergunta" placeholder="Cor de fundo da pergunta">
+                <h2>Resposta correta</h2>
+                <input class="correta" placeholder="Resposta correta">
+                <input class="correta" placeholder="URL da imagem">
+                <h2>Respostas incorretas</h2>
+                <input class="incorreta-1" placeholder="Resposta incorreta 1">
+                <input class="incorreta-1 margem" placeholder="URL da imagem 1">
+                <input class="incorreta-2" placeholder="Resposta incorreta 2">
+                <input class="incorreta-2 margem" placeholder="URL da imagem 2">
+                <input class="incorreta-3" placeholder="Resposta incorreta 3">
+                <input class="incorreta-3 margem" placeholder="URL da imagem 3">
+            </button>
+            <button class="não-selecionado">
+                <h2>Pergunta 3</h2>
+                <input class="pergunta" placeholder="Texto da pergunta">
+                <input class="pergunta" placeholder="Cor de fundo da pergunta">
+                <h2>Resposta correta</h2>
+                <input class="correta" placeholder="Resposta correta">
+                <input class="correta" placeholder="URL da imagem">
+                <h2>Respostas incorretas</h2>
+                <input class="incorreta-1" placeholder="Resposta incorreta 1">
+                <input class="incorreta-1 margem" placeholder="URL da imagem 1">
+                <input class="incorreta-2" placeholder="Resposta incorreta 2">
+                <input class="incorreta-2 margem" placeholder="URL da imagem 2">
+                <input class="incorreta-3" placeholder="Resposta incorreta 3">
+                <input class="incorreta-3 margem" placeholder="URL da imagem 3">
             </button> -->
         </div>
+
+
+
+             <!-- Layout do Quizz selecionado-->
+
+             <div class="Layout-quizz hidden">
+                <div class="fundo-topo"><img src="teste.png"/></div>
+
+
+             </div>
 
     </main>
     <footer>     
