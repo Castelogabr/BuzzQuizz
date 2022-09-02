@@ -10,6 +10,7 @@ function carregarQuizes(resposta){
   for(i=0; i < 6; i++){
     element_todos_quizes.innerHTML += `
     <div class="quiz">
+      <div class="gradient-Vertical"></div>
       <h2>${resposta.data[i].title}</h2>
       <img src="${resposta.data[i].image}">
     <div>
