@@ -10,6 +10,7 @@ function carregarQuizes(resposta){
   for(i=0; i < 6; i++){
     element_todos_quizes.innerHTML += `
     <div class="quiz">
+      <div class="gradient-Vertical"></div>
       <h2>${resposta.data[i].title}</h2>
       <img src="${resposta.data[i].image}">
     <div>
@@ -130,11 +131,15 @@ function criarPerguntas() {
 }
 
 function selecionarPergunta(botao) {
+  let botoes = document.querySelectorAll('.principal3>button');
+  for (let i=0; i<botoes.length; i++) {
+    botoes[i].classList.add('não-selecionado');
+  }
   botao.classList.remove('não-selecionado');
-  botao.classList.add('selecionado')
-  let remover = document.querySelector('.selecionado');
-  remover.classList.add('não-selecionado')
-  remover.classList.remove('selecionado')
+  // botao.classList.add('selecionado')
+  
+  
+  // remover.classList.remove('selecionado')
 }
 
 
