@@ -30,7 +30,7 @@ function falhaAoCarregarQuizes(resposta){
 
 function criarQuiz() {
   // Aqui vai esconder elementos
-  let div1 = document.querySelector('.cabeçalho')
+  let div1 = document.querySelector('.criar-quizz')
   div1.classList.add('hidden')
   let div2 = document.querySelector('.principal')
   div2.classList.add('hidden')
@@ -129,6 +129,13 @@ function criarPerguntas() {
 
 }
 
+function selecionarPergunta(botao) {
+  botao.classList.remove('não-selecionado');
+  botao.classList.add('selecionado')
+  let remover = document.querySelector('.selecionado');
+  remover.classList.add('não-selecionado')
+  remover.classList.remove('selecionado')
+}
 
 
 
