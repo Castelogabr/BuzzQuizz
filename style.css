@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto";
   font-style: normal;
+  background-color: #fafafa;
 }
 
 /** {Cabeçalho} **/
@@ -180,10 +181,6 @@ main{
     align-items: center;
   }
 
-  .hidden{
-    display: none;
-  }
-
   .principal2 h1 {
     font-family: "Roboto";
     font-size: 23px;
@@ -196,6 +193,7 @@ main{
     width: 600px;
     height: 256px;
     background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,7 +232,11 @@ main{
   }
 
   .principal3 {
+    width: 42%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .principal3 h1 {
@@ -246,7 +248,7 @@ main{
   }
 
   .principal3 button {
-    width: 600px;
+    width: 100%;
     height: 825px;
     background-color: #FFFFFF;
     border: hidden;
@@ -255,6 +257,7 @@ main{
     flex-direction: column;
     gap: 14px;
     margin-bottom: 23px;
+    padding-left: 4%;
   }
 
   .principal3 button .margem {
@@ -265,13 +268,12 @@ main{
     font-family: "Roboto";
     font-size: 20px;
     font-weight: 700;
-    margin-left: 16px;
     margin-right: auto;
     margin-top: 20px;
   }
 
   .principal3 input {
-    width: 564px;
+    width: 94%;
     height: 46px;
     font-family: "Roboto";
     font-size: 19px;
@@ -283,10 +285,33 @@ main{
     border-radius: 5px;
   }
 
-  .não-selecionado>* {
+  .não-selecionado>*:not(:first-child) {
     display: none;
   }
-  
+
+  .principal3>.não-selecionado {
+    height: 74px;
+    cursor: pointer;
+  }
+
+  .principal3>.botao-nivel {
+    width: 59%;
+    height: 54px;
+    background-color: #EC362D;
+    border-radius: 15px;
+    margin-top: 58px;
+    margin-bottom: 468px;
+    font-family: "Roboto";
+    font-size: 21px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .hidden{
+    display: none;
+  }
+
  /* layout da pagina de teste*/
   .Layout-quizz {
     margin: auto auto;

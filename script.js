@@ -142,5 +142,12 @@ function selecionarPergunta(botao) {
   // remover.classList.remove('selecionado')
 }
 
+function criarNiveis() {
+  let div4 = document.querySelector('.principal3');
+  div4.classList.add('hidden');
+  // alert('Você irá para a criação dos níveis');
+  setTimeout(alert, 200, 'Você irá para a criação dos níveis')
+}
+
 
 
