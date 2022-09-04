@@ -92,7 +92,31 @@
                 <input class="incorreta-3" placeholder="Resposta incorreta 3">
                 <input class="incorreta-3 margem" placeholder="URL da imagem 3">
             </button>
-            <button class="botao-nivel" onclick="criarNiveis()">Prosseguir para criar níveis</button>
+        </div>
+
+        <div class="principal4 hidden">
+            <h1>Agora, decida os níveis</h1>
+            <button onclick="selecionarNivel(this)">
+                <h2>Nível 1</h2>
+                <input placeholder="Título do nível">
+                <input placeholder="% de acerto mínima">
+                <input placeholder="URL da imagem do nível">
+                <input placeholder="Descrição do nível">
+            </button>
+            <button onclick="selecionarNivel(this)" class="não-selecionado">
+                <h2>Nível 2</h2>
+                <input placeholder="Título do nível">
+                <input placeholder="% de acerto mínima">
+                <input placeholder="URL da imagem do nível">
+                <input placeholder="Descrição do nível">
+            </button>
+        </div>
+
+        <div class="principal5 hidden">
+            <h1>Seu quizz está pronto!</h1>
+            <div class="imagem-quiz"></div>
+            <button onclick="acessoQuiz()">Acessar Quizz</button>
+            <span class="home" onclick="voltarHome()">Voltar pra home</span>
         </div>
 
 

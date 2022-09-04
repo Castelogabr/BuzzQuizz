@@ -3,6 +3,11 @@ requestAPI.then(
   carregarQuizes
 )
 
+// let titulo = document.getElementById("titulo").value
+// let url = document.getElementById("url").value
+// let qtsPergunta = parseInt(document.getElementById("qtsPergunta").value)
+// let qtsDeNivel = parseInt(document.getElementById("qtsDeNivel").value)
+
 
 function carregarQuizes(resposta){
 
@@ -90,11 +95,12 @@ function criarPerguntas() {
   div3.classList.add('hidden')
   let div4 = document.querySelector('.principal3')
   div4.classList.remove('hidden')
+  // let div5 = document.querySelector('.principal4');
 
   let titulo = document.getElementById("titulo").value
   let url = document.getElementById("url").value
   let qtsPergunta = parseInt(document.getElementById("qtsPergunta").value)
-  let qtsDeNivel = parseInt(document.getElementById("qtsDeNivel").value)
+  
 
   // Condicional da URL e Titulo
   if( titulo != "" && url != "" ){
@@ -109,24 +115,52 @@ function criarPerguntas() {
   // Condicional da Quantidade de Pergunta
   if( isNaN(qtsPergunta) == false){
 
-    if( qtsPergunta >= 3 && !qtsPergunta == 0){
-      for(i=0; i < (qtsPergunta - 3); i++){
+    if (qtsPergunta >= 3){
+      for (let i=3; i < qtsPergunta; i++) {
         // Sem terminar
+        div4.innerHTML += `<button onclick="selecionarPergunta(this)" class="não-selecionado">
+        <h2 class="mostrar">Pergunta 3</h2>
+        <input class="pergunta" placeholder="Texto da pergunta">
+        <input class="pergunta" placeholder="Cor de fundo da pergunta">
+        <h2>Resposta correta</h2>
+        <input class="correta" placeholder="Resposta correta">
+        <input class="correta" placeholder="URL da imagem">
+        <h2>Respostas incorretas</h2>
+        <input class="incorreta-1" placeholder="Resposta incorreta 1">
+        <input class="incorreta-1 margem" placeholder="URL da imagem 1">
+        <input class="incorreta-2" placeholder="Resposta incorreta 2">
+        <input class="incorreta-2 margem" placeholder="URL da imagem 2">
+        <input class="incorreta-3" placeholder="Resposta incorreta 3">
+        <input class="incorreta-3 margem" placeholder="URL da imagem 3">
+      </button>`
       }
-      
+      let botao = document.querySelector('.principal3');
+      botao.innerHTML += `<button class="botao-nivel" onclick="criarNiveis()">Prosseguir para criar níveis</button>`     
     }else{
-      alert("O número não pode ser maior que 3 e nem pode ser 0")
+      alert("O número não pode ser menor que 3")
     }
   }else{
     alert("Quantidades de perguntas não pode estar vazia e nem ser uma letra utilize apenas números")
   }
      
   // Condicional da Quantidade de Nivel
-  if(isNaN(qtsDeNivel) == false && qtsDeNivel >= 2 && qtsDeNivel <= 4){
-    
-  }else{
-    alert(" quantidade de nivel não pode ser um alfabeto utilize apenas números e o número tem que ser entre 2 e 4 niveis ")
-  }
+  // if(isNaN(qtsDeNivel) == false && qtsDeNivel >= 2 && qtsDeNivel <= 4){
+  //   for (let i=2; i < qtsDeNivel; i++) {
+  //     // Sem terminar
+  //     div5.innerHTML += `<button onclick="selecionarNível(this)" class="não-selecionado">
+  //     <h2>Nível 2</h2>
+  //     <input placeholder="Título do nível">
+  //     <input placeholder="% de acerto mínima">
+  //     <input placeholder="URL da imagem do nível">
+  //     <input placeholder="Descrição do nível">
+  //   </button>`
+  //   }
+  
+  //   let botao2 = document.querySelector('.principal4');
+  //   botao2.innerHTML += `<button class="botao-nivel" onclick="criarNiveis()">Prosseguir para criar níveis</button>` 
+  // }else{
+  //   alert(" Quantidade de nivel não pode ser um alfabeto. Utilize apenas números entre 2 e 4.")
+  // }
 
 }
 
@@ -145,9 +179,81 @@ function selecionarPergunta(botao) {
 function criarNiveis() {
   let div4 = document.querySelector('.principal3');
   div4.classList.add('hidden');
+  let div5 = document.querySelector('.principal4');
+  div5.classList.remove('hidden')
+
+  let qtsDeNivel = parseInt(document.getElementById("qtsDeNivel").value)
+
+  if(isNaN(qtsDeNivel) == false && qtsDeNivel >= 2 && qtsDeNivel <= 4){
+    for (let i=2; i < qtsDeNivel; i++) {
+      // Sem terminar
+      div5.innerHTML += `<button onclick="selecionarNivel(this)" class="não-selecionado">
+      <h2>Nível 2</h2>
+      <input placeholder="Título do nível">
+      <input placeholder="% de acerto mínima">
+      <input placeholder="URL da imagem do nível">
+      <input placeholder="Descrição do nível">
+    </button>`
+    }
+  
+    let botao2 = document.querySelector('.principal4');
+    botao2.innerHTML += `<button class="fim-quiz" onclick="finalizarQuiz()">Finalizar Quizz</button>` 
+  }else{
+    alert(" Quantidade de nivel não pode ser um alfabeto. Utilize apenas números entre 2 e 4.")
+  }
+
+  
+  // console.log(qtsDeNivel)
   // alert('Você irá para a criação dos níveis');
-  setTimeout(alert, 200, 'Você irá para a criação dos níveis')
+  // setTimeout(alert, 200, 'Você irá para a criação dos níveis')
+
+//   if (qtsdeNivel >= 2){
+//     for (let i=2; i < qtsdeNivel; i++) {
+//       // Sem terminar
+//       div5.innerHTML += `<button onclick="selecionarNível(this)" class="não-selecionado">
+//       <h2>Nível 2</h2>
+//       <input placeholder="Título do nível">
+//       <input placeholder="% de acerto mínima">
+//       <input placeholder="URL da imagem do nível">
+//       <input placeholder="Descrição do nível">
+//     </button>`
+//     }
+//     let botao = document.querySelector('.principal4');
+//     botao.innerHTML += `<button class="botao-nivel" onclick="criarNiveis()">Prosseguir para criar níveis</button>` 
+//   }
+//   else{
+//     alert("O número não pode ser menor que 2")
+// }
+
+
 }
 
+function selecionarNivel(botao) {
+  let botoes = document.querySelectorAll('.principal4>button');
+  for (let i=0; i<botoes.length; i++) {
+    botoes[i].classList.add('não-selecionado');
+  }
+  botao.classList.remove('não-selecionado');
+  // botao.classList.add('selecionado')
+  
+  
+  // remover.classList.remove('selecionado')
+}
 
+function finalizarQuiz() {
+  let div5 = document.querySelector('.principal4');
+  div5.classList.add('hidden');
+  let div6 = document.querySelector('.principal5');
+  div6.classList.remove('hidden');
 
+}
+
+function voltarHome() {
+
+  location.reload(true)
+
+}
+
+function acessarQuiz () {
+  
+}
