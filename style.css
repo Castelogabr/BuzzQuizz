@@ -305,13 +305,15 @@ main{
     background-color: #EC362D;
     border-radius: 15px;
     margin-top: 58px;
-    /* margin-bottom: 468px; */
     font-family: "Roboto";
     font-size: 21px;
     font-weight: 400;
     color: #FFFFFF;
     text-align: center;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
   }
 
   .principal4 {
@@ -376,12 +378,13 @@ main{
     background-color: #EC362D;
     border-radius: 15px;
     margin-top: 58px;
-    /* margin-bottom: 468px; */
     font-family: "Roboto";
     font-size: 21px;
     font-weight: 400;
     color: #FFFFFF;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
     cursor: pointer;
   }
 
