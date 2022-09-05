@@ -34,7 +34,6 @@ header {
 /** {Conteúdo do site} **/
 
 main{
-  margin-top: 69px;
   /* padding-top: 77px; */
   display: flex;
   justify-content: center;
@@ -449,10 +448,7 @@ main{
       display: none;
   }
 
- /* layout da pagina de teste*/
-  .Layout-quizz {
-    margin: auto auto;
-  } 
+ /* layout da pagina de teste*/ 
   .main{
     display: flex;
     justify-content: center;
@@ -460,9 +456,13 @@ main{
     flex-direction: column;
     position: relative;
   }
-  .container {
-    position: relative;
-    width: 100%;
+
+  .container .texto {
+     position: relative;
+      width: 100%;
+      font-size: 32px;
+      top: 130px;
+      word-break: break-all;
 
   }
   
@@ -473,14 +473,7 @@ main{
     top:69px;
     left:0;
   }
-  
-  .texto {
-    position: absolute;
-    font-size: 32px;
-    top: 130px;
-    left: 570px;
-    word-break: break-all;
-  }
+
 
   .gradient-Lateral{
     position: absolute;
@@ -547,6 +540,14 @@ main{
       width: 91%;
       margin-top: 31px;
     }
+
+    .Layout-quizz{
+      margin-top: 69px;
+      /* padding-top: 77px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;    }
 
     .principal {
       width: 91%;
