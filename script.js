@@ -83,6 +83,9 @@ const objectApiSend = {
   }]
 }
 
+// const DadosQuiz = axios.post("https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes", objectApiSend)
+// DadosQuiz.then(criarPerguntas)
+
 //Aqui nessas váriaveis vão estar os valores doos inputs dentro de principal2
 function criarPerguntas() {
 
@@ -99,7 +102,7 @@ function criarPerguntas() {
 
   }else{
     alert("Dentro das caixa não pode estár vazia")
-
+    // return
   }
   
   // Condicional da Quantidade de Pergunta
